@@ -1,0 +1,14 @@
+button {
+  padding: $size-1 $size-2;
+  font-family: inherit;
+  border-radius: 2rem;
+  border: none;
+}
+
+$colorNames: blue, orange, green;
+
+@each $color in $colorNames {
+  .btn-#{$color} {
+    background-color: $color;
+  }
+}

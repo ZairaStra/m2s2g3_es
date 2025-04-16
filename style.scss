@@ -43,7 +43,9 @@ main {
   div {
     width: 50%;
     .buttons {
-      padding-block: 1rem;
+      display: inline-block;
+      margin: auto;
+      padding: 1rem;
     }
   }
   img {
