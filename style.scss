@@ -44,8 +44,14 @@ main {
       padding-block: 2rem;
       div {
         width: 50%;
+        h1 {
+          @include title-big();
+        }
+
         .buttons {
+          margin-inline: $size-6;
           padding: $size-2;
+          width: 100%;
           button {
             padding: $size-2 $size-3;
             font-family: inherit;

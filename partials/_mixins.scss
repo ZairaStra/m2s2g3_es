@@ -1,5 +1,6 @@
-@mixin title-big($size, $fontStyle) {
-  font-size: $font-size-3;
-  font-style: italic;
-  margin-bottom: $size-0;
+@mixin title-big() {
+  font-size: $font-size-4;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: $size-3;
 }

@@ -1,5 +1,14 @@
+$bodyFont: "Segoe UI", Tahoma, Verdana, sans-serif;
+
+$hFont: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+$font-size-0: 0.5rem;
+$font-size-1: 1rem;
+$font-size-2: 1.5rem;
+$font-size-3: 2rem;
+$font-size-4: 4rem;
 body {
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-family: $bodyFont;
 }
 
 h1,
@@ -8,10 +17,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: $hFont;
 }
-
-$font-size-0: 0.5rem;
-$font-size-1: 1rem;
-$font-size-2: 1.5rem;
-$font-size-3: 2rem;

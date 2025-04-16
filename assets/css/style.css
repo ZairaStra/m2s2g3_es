@@ -88,8 +88,16 @@ main .hero .flex-hero {
 main .hero .flex-hero div {
   width: 50%;
 }
+main .hero .flex-hero div h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
 main .hero .flex-hero div .buttons {
+  margin-inline: 6rem;
   padding: 0.5rem;
+  width: 100%;
 }
 main .hero .flex-hero div .buttons button {
   padding: 0.5rem 1rem;
