@@ -23,3 +23,15 @@ $size-6: 6rem;
     padding-block: $size-2;
   }
 }
+$size-i: "size-0", "size-1", "size-2", "size-3", "size-4", "size-5", "size-6";
+$paddingInlineNames: "sm", "normal", "md", "lg", "xl", "xxl";
+@each $paddingInline in $paddingInlineNames {
+  .pd-#{$paddingInline} {
+    padding-inline: $size-i;
+  }
+}
+$paddingBlockNames: "sm", "normal", "md", "lg", "xl", "xxl";
+
+$marginInlineNames: "sm", "normal", "md", "lg", "xl", "xxl";
+
+$marginBlockNames: "sm", "normal", "md", "lg", "xl", "xxl";

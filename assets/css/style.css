@@ -39,6 +39,30 @@ h6 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.pd-sm {
+  padding-inline: "size-0", "size-1", "size-2", "size-3", "size-4", "size-5", "size-6";
+}
+
+.pd-normal {
+  padding-inline: "size-0", "size-1", "size-2", "size-3", "size-4", "size-5", "size-6";
+}
+
+.pd-md {
+  padding-inline: "size-0", "size-1", "size-2", "size-3", "size-4", "size-5", "size-6";
+}
+
+.pd-lg {
+  padding-inline: "size-0", "size-1", "size-2", "size-3", "size-4", "size-5", "size-6";
+}
+
+.pd-xl {
+  padding-inline: "size-0", "size-1", "size-2", "size-3", "size-4", "size-5", "size-6";
+}
+
+.pd-xxl {
+  padding-inline: "size-0", "size-1", "size-2", "size-3", "size-4", "size-5", "size-6";
+}
+
 .btn-blue {
   background-color: blue;
 }
