@@ -1,0 +1,64 @@
+@import "./partials/reset";
+@import "./partials/colors";
+@import "./partials/font";
+@import "./partials/spaces";
+@import "./partials/buttons";
+@import "./partials/mixins";
+@import "./partials/animations";
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c95c95;
+
+  img {
+    width: 5rem;
+    border-radius: 5rem;
+  }
+
+  nav {
+    width: 40rem;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+main {
+  padding: 3rem;
+}
+
+.flex-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 2rem;
+  div {
+    width: 50%;
+    .buttons {
+      padding-block: 1rem;
+    }
+  }
+  img {
+    max-width: 30rem;
+  }
+}
+
+.flex-article {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 3rem;
+  div {
+    max-width: 20%;
+    img {
+      width: 100%;
+    }
+  }
+}
