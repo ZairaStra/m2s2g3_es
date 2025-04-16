@@ -33,34 +33,35 @@
 
 main {
   padding: 3rem;
-}
 
-.flex-hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-block: 2rem;
-  div {
-    width: 50%;
-    .buttons {
-      display: inline-block;
-      margin: auto;
-      padding: 1rem;
+  .hero {
+    padding: $size-4;
+    .flex-hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-block: 2rem;
+      div {
+        width: 50%;
+        .buttons {
+          display: inline-block;
+          margin: auto;
+        }
+      }
+      img {
+        max-width: 30rem;
+      }
     }
   }
-  img {
-    max-width: 30rem;
-  }
-}
-
-.flex-article {
-  display: flex;
-  justify-content: space-between;
-  padding-block: 3rem;
-  div {
-    max-width: 20%;
-    img {
-      width: 100%;
+  .flex-article {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 3rem;
+    div {
+      max-width: 20%;
+      img {
+        width: 100%;
+      }
     }
   }
 }

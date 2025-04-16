@@ -82,33 +82,33 @@ button {
 main {
   padding: 3rem;
 }
-
-.flex-hero {
+main .hero {
+  padding: 1.5rem;
+}
+main .hero .flex-hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-block: 2rem;
 }
-.flex-hero div {
+main .hero .flex-hero div {
   width: 50%;
 }
-.flex-hero div .buttons {
+main .hero .flex-hero div .buttons {
   display: inline-block;
   margin: auto;
-  padding: 1rem;
 }
-.flex-hero img {
+main .hero .flex-hero img {
   max-width: 30rem;
 }
-
-.flex-article {
+main .flex-article {
   display: flex;
   justify-content: space-between;
   padding-block: 3rem;
 }
-.flex-article div {
+main .flex-article div {
   max-width: 20%;
 }
-.flex-article div img {
+main .flex-article div img {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
