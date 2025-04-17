@@ -4,3 +4,42 @@
   line-height: 1.2;
   margin-bottom: $size-3;
 }
+
+@mixin floating(
+  $radius: 0px,
+  $shadow: 0 0 0 rgb
+    (
+      0 0 0/ 0,
+    ),
+  $border: none
+) {
+  border-radius: $radius;
+  box-shadow: $shadow;
+  border: $border;
+}
+
+@mixin slideFromTop($duration, $start, $end, $name, $delay: 0) {
+  @keyframes slideInFromTop-#{$name} {
+    from {
+      transform: translateY($start);
+      opacity: 0;
+    }
+    to {
+      transform: translateY($end);
+      opacity: 1;
+    }
+  }
+
+  animation: slideInFromTop-#{$name} $duration $delay backwards;
+}
+
+@mixin article($columnsNumb, $gap: 0px) {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: $gap;
+
+  & > * {
+    width: calc((100% - (($columnsNumb - 1) * $gap)) / $columnsNumb);
+  }
+}

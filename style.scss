@@ -13,8 +13,9 @@
   background-color: #c95c95;
 
   img {
+    margin: $size-2;
     width: 5rem;
-    border-radius: 5rem;
+    @include floating(50px, 0 0 0 rgb(0 0 0/ 0), 1px solid white);
   }
 
   nav {
@@ -34,7 +35,6 @@
 
 main {
   padding: $size-5;
-
   .hero {
     padding: $size-4;
     .flex-hero {
@@ -44,6 +44,7 @@ main {
       padding-block: 2rem;
       div {
         width: 50%;
+        @include slideFromTop(1s, -10px, 0px, content, 0.15s);
         h1 {
           @include title-big();
         }
@@ -52,27 +53,23 @@ main {
           margin-inline: $size-6;
           padding: $size-2;
           width: 100%;
-          button {
-            padding: $size-2 $size-3;
-            font-family: inherit;
-            font-size: $font-size-1;
-            border-radius: 2rem;
-            border: none;
-          }
         }
       }
       img {
         max-width: 30rem;
+        @include floating(10px, 0 20px 30px rgb(0 0 0/ 0.6), 2px solid white);
+        @include slideFromTop(1s, -40px, 15px, content-img, 0.5s);
       }
     }
   }
   .flex-article {
-    display: flex;
-    justify-content: space-between;
+    @include article(3, 10px);
     padding-block: 3rem;
     div {
-      max-width: 20%;
+      @include floating(4px, 0 10px 15px rgb(0 0 0/ 0.4));
+      overflow: hidden;
       img {
+        display: block;
         width: 100%;
       }
     }

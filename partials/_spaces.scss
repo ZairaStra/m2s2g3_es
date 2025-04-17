@@ -6,32 +6,30 @@ $size-4: 1.5rem;
 $size-5: 3rem;
 $size-6: 6rem;
 
-@mixin dynamicSpacing() {
-  margin-top: $size-1;
-  margin-bottom: $fontValue;
-  @if ($fontValue==$bodyFont) {
-    margin-bottom: $size-2;
-  } @else {
-    margin-bottom: $size-4;
+$directions: block, inline;
+$spaces: (
+  sm: 10px,
+  normal: 16px,
+  md: 20px,
+  lg: 30px,
+  xl: 40px,
+  xxl: 50px,
+);
+
+@each $key, $value in $spaces {
+  @each $dir in $directions {
+    .padding-#{$dir}-#{$key} {
+      padding-#{$dir}: $value;
+    }
+    .margin-#{$dir}-#{$key} {
+      margin-#{$dir}: $value;
+    }
+  }
+  .padding-#{$key} {
+    padding: $value;
   }
 
-  padding-inline: $size-2;
-  padding-block: $fontValue;
-  @if ($fontValue==$bodyFont) {
-    padding-block: $size-4;
-  } @else {
-    padding-block: $size-2;
+  .margin-#{$key} {
+    margin: $value;
   }
 }
-$size-i: "size-0", "size-1", "size-2", "size-3", "size-4", "size-5", "size-6";
-$paddingInlineNames: "sm", "normal", "md", "lg", "xl", "xxl";
-@each $paddingInline in $paddingInlineNames {
-  .pd-#{$paddingInline} {
-    padding-inline: $size-i;
-  }
-}
-$paddingBlockNames: "sm", "normal", "md", "lg", "xl", "xxl";
-
-$marginInlineNames: "sm", "normal", "md", "lg", "xl", "xxl";
-
-$marginBlockNames: "sm", "normal", "md", "lg", "xl", "xxl";
